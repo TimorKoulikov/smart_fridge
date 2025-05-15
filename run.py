@@ -1,6 +1,6 @@
 print("START PROGRAM")
 
-from wifi_connect import connect_to_wifi
+from wifi_utils import connect_to_wifi
 from utils import debug_print
 
 loop = True
@@ -8,14 +8,11 @@ DEBUG = True
 
 #connect to WIFI
 conn = connect_to_wifi()
-
+image_bytes =2;
 if conn.is_connected:
-    # Use default URL (localhost:8000/ping)
-    conn.ping()
     
     # Or specify a different URL
-    conn.ping("http://192.168.1.100:8000/ping")
-
+    conn.send_image(bytes([0,0,1,1]))
 #while loop:
     
     # here the taking pictures stuff - DAR
