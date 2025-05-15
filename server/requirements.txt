@@ -1,5 +1,8 @@
 fastapi==0.104.1
 uvicorn==0.24.0
+python-multipart==0.0.6
+Pillow==10.1.0
+numpy==1.26.2
 
-SERVER_IP = "172.20.10.7"  # Your computer's IP address
-SERVER_PORT = 8000 
+#SERVER_IP = "172.20.10.7"  # Your computer's IP address
+#SERVER_PORT = 8000 
