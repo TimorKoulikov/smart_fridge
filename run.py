@@ -8,15 +8,17 @@ DEBUG = True
 
 #connect to WIFI
 conn = connect_to_wifi()
-image_bytes =2;
-if conn.is_connected:
+
+#if conn.is_connected:
     
     # Or specify a different URL
-    conn.send_image(bytes([0,0,1,1]))
-#while loop:
+#    conn.send_image(bytes([0,0,1,1]))
+
+
+while loop:
     
     # here the taking pictures stuff - DAR
-#    debug_print(DEBUG,"LOOP")
+    debug_print(DEBUG,"LOOP")
     
     
     
